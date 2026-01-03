@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body{
+  background: linear-gradient(45deg, skyblue, pink);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.container{
+  height: clamp(200px, 80vw, 500px);
+  width: clamp(200px, 80vw, 500px);
+  border: 5px double black;
+  border-radius: 10px;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, lightgreen, #eb0);
+}
+
+h1{
+  text-align: center;
+  font-family: "Ubuntu", Sans-Serif;
+  font-weight: 700;
+  padding: 20px;
+}
+
+.game{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 90%;
+  width: 90%;
+  gap: 10px;
+}
+
+.box{
+  background: linear-gradient(45deg, skyblue, pink);
+  padding: 10px;
+  border: none;
+  box-shadow: 5px 5px 10px #555;
+  border-radius: 10px;
+  font-size: 3rem;
+  font-family: "Poppins";
+}
+
+.winner-X{
+  background-color: skyblue;
+  color: black;
+  padding: 10px;
+}
+
+.result{
+  box-shadow: 5px 5px 10px #555;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-family: "Ubuntu", Sans-Serif;
+  border-radius: 10px;
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.winner-O{
+  background-color: pink;
+  color: black;
+  padding: 10px;
+}
+
+.btn-container{
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+  width: clamp(200px, 80vw, 500px);
+}
+
+.btn{
+  padding: 20px 40px;
+  background-color: orange;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #555;
+  font-family: "Ubuntu", Sans-Serif;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.resetBtn{
+  display: none;
+}
