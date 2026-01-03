@@ -1,4 +1,2 @@
-# tic-tac-toe
+# game-tic-tac-toe-js
 Tic tac toe game
-<br>
-hello world
